@@ -29,7 +29,12 @@ export function PlayIcon({ className }: { className?: string }) {
 export function StoreButtons() {
   return (
     <div className={styles.row}>
-      <a href={APP_STORE_URL} className={`${styles.button} ${styles.apple}`}>
+      <a
+        href={APP_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${styles.button} ${styles.apple}`}
+      >
         <AppleIcon className={styles.icon} />
         <div className={styles.textBlock}>
           <div className={styles.subLabel}>Download on the</div>
@@ -38,7 +43,12 @@ export function StoreButtons() {
           </div>
         </div>
       </a>
-      <a href={PLAY_STORE_URL} className={`${styles.button} ${styles.play}`}>
+      <a
+        href={PLAY_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${styles.button} ${styles.play}`}
+      >
         <PlayIcon className={styles.icon} />
         <div className={styles.textBlock}>
           <div className={styles.subLabel}>Get it on</div>

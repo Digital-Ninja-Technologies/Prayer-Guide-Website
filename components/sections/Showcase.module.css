@@ -1,7 +1,7 @@
 .section {
   max-width: var(--content-max);
   margin: 0 auto;
-  padding: 56px var(--gutter);
+  padding: 48px var(--gutter);
 }
 
 @media (min-width: 900px) {
@@ -13,9 +13,16 @@
 .row {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 36px;
+  gap: 24px;
   align-items: center;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 500px) {
+  .row {
+    gap: 32px;
+    margin-bottom: 56px;
+  }
 }
 
 @media (min-width: 900px) {
