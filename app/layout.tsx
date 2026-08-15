@@ -20,11 +20,25 @@ const spectral = Spectral({
   display: "swap",
 });
 
+const title = "Prayer Guide — A quiet place to return to, each day.";
+const description =
+  "Guided prayers, daily scripture, and gentle reminders — a calm companion for a prayer life you can actually keep. Free to use, every feature, no subscription.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://prayerguide.app"),
-  title: "Prayer Guide — A quiet place to return to, each day.",
-  description:
-    "Guided prayers, daily scripture, and gentle reminders — a calm companion for a prayer life you can actually keep. Free to use, every feature, no subscription.",
+  metadataBase: new URL("https://prayer-guide-website.vercel.app"),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    type: "website",
+    siteName: "Prayer Guide",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({
