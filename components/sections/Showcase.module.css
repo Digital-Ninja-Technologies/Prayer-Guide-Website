@@ -45,9 +45,14 @@
   order: 2;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 900px) {
+  .phoneCol {
+    margin-bottom: 0;
+  }
+
   .reverse .textCol {
     order: 2;
   }
