@@ -1,0 +1,59 @@
+.footer {
+  position: relative;
+  z-index: 5;
+  border-top: 1px solid var(--line);
+  padding: 40px var(--gutter);
+  max-width: var(--content-max);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (min-width: 700px) {
+  .footer {
+    padding: 52px var(--gutter);
+    gap: 24px;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.wordmark {
+  font-family: var(--font-spectral), serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.tagline {
+  color: var(--dim);
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (min-width: 700px) {
+  .links {
+    gap: 28px;
+  }
+}
+
+.link {
+  color: var(--muted);
+}

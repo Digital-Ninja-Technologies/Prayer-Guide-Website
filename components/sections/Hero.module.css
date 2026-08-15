@@ -1,0 +1,148 @@
+.hero {
+  position: relative;
+  padding: 40px var(--gutter) 56px;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .hero {
+    padding: 96px var(--gutter) 80px;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 48px;
+  }
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(91, 194, 179, 0.1);
+  border: 1px solid rgba(91, 194, 179, 0.22);
+  border-radius: 100px;
+  padding: 9px 18px;
+  margin-bottom: 24px;
+}
+
+.badgeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+  animation: glowpulse 2.4s ease-in-out infinite;
+}
+
+.badgeLabel {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+@media (min-width: 500px) {
+  .badgeLabel {
+    font-size: 13px;
+  }
+}
+
+.h1 {
+  font-family: var(--font-spectral), serif;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: 0.2px;
+  margin: 0 0 22px;
+}
+
+@media (min-width: 560px) {
+  .h1 {
+    font-size: 54px;
+  }
+}
+
+@media (min-width: 900px) {
+  .h1 {
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 1160px) {
+  .h1 {
+    font-size: 76px;
+    line-height: 1.04;
+    margin-bottom: 26px;
+  }
+}
+
+.sub {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 32px;
+  max-width: 520px;
+}
+
+@media (min-width: 700px) {
+  .sub {
+    font-size: 20px;
+    margin-bottom: 38px;
+  }
+}
+
+.ctaRow {
+  margin-bottom: 36px;
+}
+
+@media (min-width: 700px) {
+  .ctaRow {
+    margin-bottom: 40px;
+  }
+}
+
+.socialProof {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatars {
+  display: flex;
+  flex: none;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid var(--bg);
+}
+
+.avatar + .avatar {
+  margin-left: -12px;
+}
+
+.stars {
+  color: var(--amber);
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.proofLabel {
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.phoneCol {
+  order: -1;
+}
+
+@media (min-width: 900px) {
+  .phoneCol {
+    order: 0;
+  }
+}

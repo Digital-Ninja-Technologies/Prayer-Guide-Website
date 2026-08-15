@@ -1,0 +1,138 @@
+.section {
+  padding: 56px var(--gutter);
+  background: linear-gradient(180deg, transparent, var(--surfacefade), transparent);
+}
+
+@media (min-width: 700px) {
+  .section {
+    padding: 80px var(--gutter);
+  }
+}
+
+.header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 40px;
+}
+
+@media (min-width: 700px) {
+  .header {
+    margin-bottom: 56px;
+  }
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin: 0 0 14px;
+}
+
+.h2 {
+  font-family: var(--font-spectral), serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.14;
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  .h2 {
+    font-size: 46px;
+    line-height: 1.1;
+  }
+}
+
+.grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 700px) {
+  .card {
+    border-radius: 24px;
+    padding: 34px 32px;
+    gap: 22px;
+  }
+}
+
+.stars {
+  color: var(--amber);
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.quote {
+  font-family: var(--font-spectral), serif;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0;
+  color: var(--text);
+  flex: 1;
+}
+
+@media (min-width: 700px) {
+  .quote {
+    font-size: 21px;
+  }
+}
+
+.attribution {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.initial {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-spectral), serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--bg);
+  flex: none;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.role {
+  font-size: 13px;
+  color: var(--dim);
+  font-weight: 600;
+}

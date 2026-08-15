@@ -1,0 +1,251 @@
+.section {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 40px var(--gutter) 40px;
+}
+
+@media (min-width: 700px) {
+  .section {
+    padding: 56px var(--gutter) 40px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+@media (min-width: 700px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin: 0 0 14px;
+}
+
+.h2 {
+  font-family: var(--font-spectral), serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+  max-width: 620px;
+}
+
+@media (min-width: 700px) {
+  .h2 {
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .h2 {
+    font-size: 54px;
+    line-height: 1.06;
+  }
+}
+
+.seeHow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  font-weight: 800;
+  font-size: 15px;
+  border: 1px solid var(--line2);
+  border-radius: 100px;
+  padding: 13px 22px;
+  transition: background 0.3s ease, border-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.seeHow:hover {
+  background: rgba(91, 194, 179, 0.12);
+  border-color: rgba(91, 194, 179, 0.4);
+  color: var(--text);
+}
+
+.seeHowArrow {
+  color: var(--teal);
+}
+
+.bento {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 700px) {
+  .bento {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bento {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, var(--surface), var(--card2));
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
+    border-color 0.45s ease, background 0.45s ease;
+}
+
+@media (min-width: 700px) {
+  .card {
+    border-radius: 26px;
+    padding: 34px 32px;
+  }
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(91, 194, 179, 0.4);
+}
+
+.cardLarge {
+  padding: 32px 28px;
+}
+
+@media (min-width: 700px) {
+  .cardLarge {
+    padding: 40px 38px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .span7 {
+    grid-column: span 7;
+  }
+  .span5 {
+    grid-column: span 5;
+  }
+  .span4 {
+    grid-column: span 4;
+  }
+}
+
+.accentTeal {
+  background: linear-gradient(150deg, var(--surface2), var(--card2));
+  border-color: rgba(91, 194, 179, 0.3);
+}
+
+.orb {
+  position: absolute;
+  right: -90px;
+  top: -90px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: drift 12s ease-in-out infinite;
+}
+
+.cardTop {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconTile {
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: var(--text);
+  flex: none;
+}
+
+@media (min-width: 700px) {
+  .iconTile {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    font-size: 24px;
+  }
+}
+
+.cardIndex {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--faint);
+}
+
+.cardTitle {
+  position: relative;
+  font-family: var(--font-spectral), serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.15;
+}
+
+@media (min-width: 700px) {
+  .cardTitle {
+    font-size: 25px;
+  }
+}
+
+.cardTitleLarge {
+  font-size: 24px;
+}
+
+@media (min-width: 700px) {
+  .cardTitleLarge {
+    font-size: 32px;
+  }
+}
+
+.cardBody {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  .cardBody {
+    font-size: 16px;
+  }
+}
+
+.cardBodyLarge {
+  font-size: 16px;
+}
+
+@media (min-width: 700px) {
+  .cardBodyLarge {
+    font-size: 17px;
+  }
+}

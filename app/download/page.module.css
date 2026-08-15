@@ -1,0 +1,234 @@
+.wrap {
+  position: relative;
+  min-height: 100vh;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  padding-top: 84px;
+}
+
+.main {
+  position: relative;
+  z-index: 5;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px var(--gutter);
+}
+
+@media (min-width: 700px) {
+  .main {
+    padding: 64px var(--gutter);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1180px;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+  }
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(91, 194, 179, 0.1);
+  border: 1px solid rgba(91, 194, 179, 0.22);
+  border-radius: 100px;
+  padding: 9px 18px;
+  margin-bottom: 22px;
+}
+
+.badgeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.badgeLabel {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.h1 {
+  font-family: var(--font-spectral), serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 18px;
+}
+
+@media (min-width: 700px) {
+  .h1 {
+    font-size: 62px;
+    line-height: 1.06;
+    margin-bottom: 22px;
+  }
+}
+
+.sub {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 32px;
+  max-width: 440px;
+}
+
+@media (min-width: 700px) {
+  .sub {
+    font-size: 19px;
+    margin-bottom: 40px;
+  }
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+@media (min-width: 700px) {
+  .rating {
+    margin-top: 38px;
+  }
+}
+
+.stars {
+  color: var(--amber);
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.ratingLabel {
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.storeCards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.storeCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(160deg, var(--surface), var(--card2));
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 22px 22px;
+}
+
+@media (min-width: 500px) {
+  .storeCard {
+    gap: 26px;
+    border-radius: 26px;
+    padding: 26px 28px;
+  }
+}
+
+.qrTile {
+  flex: none;
+  width: 104px;
+  height: 104px;
+  border-radius: 16px;
+  background: var(--text);
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 16px 40px var(--shadow);
+}
+
+@media (min-width: 500px) {
+  .qrTile {
+    width: 132px;
+    height: 132px;
+    border-radius: 18px;
+    padding: 11px;
+  }
+}
+
+.storeInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.storeLabelRow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 8px;
+}
+
+.storeIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+@media (min-width: 500px) {
+  .storeIcon {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+  }
+}
+
+.storeLabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--dim);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.storeName {
+  font-family: var(--font-spectral), serif;
+  font-size: 21px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+@media (min-width: 500px) {
+  .storeName {
+    font-size: 26px;
+  }
+}
+
+.storeNote {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+
+.hint {
+  text-align: center;
+  font-size: 13px;
+  color: var(--dim);
+  font-weight: 600;
+  margin: 2px 0 0;
+}

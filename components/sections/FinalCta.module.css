@@ -1,0 +1,80 @@
+.section {
+  padding: 40px var(--gutter) 72px;
+}
+
+@media (min-width: 700px) {
+  .section {
+    padding: 60px var(--gutter) 110px;
+  }
+}
+
+.card {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  border-radius: 28px;
+  overflow: hidden;
+  background: radial-gradient(120% 140% at 50% 0%, var(--surface2), var(--deep) 60%);
+  border: 1px solid var(--line);
+  padding: 48px 28px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .card {
+    border-radius: 40px;
+    padding: 80px 56px;
+  }
+}
+
+.orb {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 480px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(232, 179, 107, 0.2), transparent 65%);
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+}
+
+.h2 {
+  font-family: var(--font-spectral), serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.14;
+  margin: 20px 0 16px;
+}
+
+@media (min-width: 700px) {
+  .h2 {
+    font-size: 52px;
+    line-height: 1.08;
+    margin-top: 22px;
+  }
+}
+
+.body {
+  font-size: 16px;
+  color: var(--muted);
+  margin: 0 auto 28px;
+  max-width: 520px;
+}
+
+@media (min-width: 700px) {
+  .body {
+    font-size: 19px;
+    margin-bottom: 36px;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

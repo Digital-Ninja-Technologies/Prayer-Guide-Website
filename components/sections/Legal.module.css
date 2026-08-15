@@ -1,0 +1,239 @@
+.wrap {
+  position: relative;
+  min-height: 100vh;
+  overflow: clip;
+  padding-top: 84px;
+}
+
+.main {
+  position: relative;
+  z-index: 5;
+  max-width: var(--legal-max);
+  margin: 0 auto;
+  padding: 48px var(--gutter) 40px;
+}
+
+@media (min-width: 700px) {
+  .main {
+    padding: 72px var(--gutter) 40px;
+  }
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin: 0 0 16px;
+}
+
+.h1 {
+  font-family: var(--font-spectral), serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 18px;
+}
+
+@media (min-width: 700px) {
+  .h1 {
+    font-size: 56px;
+    line-height: 1.05;
+    margin-bottom: 20px;
+  }
+}
+
+.effective {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin: 0 0 30px;
+}
+
+@media (min-width: 700px) {
+  .effective {
+    margin-bottom: 34px;
+  }
+}
+
+.summary {
+  padding: 26px 0;
+  margin-bottom: 36px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+@media (min-width: 700px) {
+  .summary {
+    padding: 30px 0;
+    margin-bottom: 44px;
+  }
+}
+
+.summaryLead {
+  font-family: var(--font-spectral), serif;
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0 0 14px;
+}
+
+@media (min-width: 700px) {
+  .summaryLead {
+    font-size: 22px;
+    line-height: 1.55;
+  }
+}
+
+.summaryBody {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  .summaryBody {
+    font-size: 17px;
+  }
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+@media (min-width: 700px) {
+  .sections {
+    gap: 44px;
+  }
+}
+
+.section {
+  display: flex;
+  gap: 16px;
+}
+
+@media (min-width: 700px) {
+  .section {
+    gap: 24px;
+  }
+}
+
+.sectionNum {
+  flex: none;
+  font-family: var(--font-spectral), serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--teal);
+  padding-top: 5px;
+  width: 28px;
+}
+
+@media (min-width: 700px) {
+  .sectionNum {
+    font-size: 20px;
+    padding-top: 6px;
+    width: 32px;
+  }
+}
+
+.sectionTitle {
+  font-family: var(--font-spectral), serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.18;
+  margin: 0 0 12px;
+}
+
+@media (min-width: 700px) {
+  .sectionTitle {
+    font-size: 30px;
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+}
+
+.sectionParas {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+@media (min-width: 700px) {
+  .sectionParas {
+    gap: 16px;
+  }
+}
+
+.sectionPara {
+  font-size: 15px;
+  line-height: 1.62;
+  color: var(--text2);
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  .sectionPara {
+    font-size: 17px;
+    line-height: 1.68;
+  }
+}
+
+.crossLink {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  margin-top: 48px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px 24px;
+}
+
+@media (min-width: 700px) {
+  .crossLink {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 64px;
+    border-radius: 24px;
+    padding: 26px 30px;
+  }
+}
+
+.crossLinkTitle {
+  font-family: var(--font-spectral), serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  .crossLinkTitle {
+    font-size: 20px;
+  }
+}
+
+.crossLinkButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--teal);
+  color: var(--onTeal);
+  font-weight: 800;
+  font-size: 15px;
+  padding: 13px 22px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.crossLinkButton:hover {
+  color: var(--onTeal);
+}

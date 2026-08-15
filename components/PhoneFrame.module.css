@@ -1,0 +1,62 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.frame {
+  position: relative;
+  border-radius: 52px;
+  background: #050807;
+  border: 12px solid #1a2320;
+  box-shadow: 0 50px 120px var(--shadow);
+  overflow: hidden;
+}
+
+.frameFloat {
+  animation: floaty 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frameFloat {
+    animation: none;
+  }
+}
+
+.frameLarge {
+  width: 260px;
+  height: 536px;
+}
+
+@media (min-width: 500px) {
+  .frameLarge {
+    width: 300px;
+    height: 618px;
+  }
+}
+
+@media (min-width: 900px) {
+  .frameLarge {
+    width: 320px;
+    height: 660px;
+  }
+}
+
+.frameShowcase {
+  width: 240px;
+  height: 496px;
+}
+
+@media (min-width: 500px) {
+  .frameShowcase {
+    width: 280px;
+    height: 578px;
+  }
+}
+
+@media (min-width: 900px) {
+  .frameShowcase {
+    width: 300px;
+    height: 620px;
+  }
+}
