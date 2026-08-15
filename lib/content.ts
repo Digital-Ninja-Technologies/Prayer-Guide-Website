@@ -1,6 +1,6 @@
 export const APP_STORE_URL = "https://apps.apple.com/app/prayer-guide";
 export const PLAY_STORE_URL =
-  "https://play.google.com/store/apps/details?id=com.prayerguide.app";
+  "https://play.google.com/store/apps/details?id=com.prayerguide.prayer_guide&hl=en";
 
 export type Feature = {
   icon: string;
