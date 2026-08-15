@@ -29,7 +29,17 @@ export function TimerScreen() {
         >
           Focus · Thanksgiving
         </p>
-        <div style={{ position: "relative", width: 230, height: 230, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div
+          style={{
+            position: "relative",
+            width: 230,
+            height: 230,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            animation: "breathe 4.5s ease-in-out infinite",
+          }}
+        >
           <svg
             viewBox="0 0 100 100"
             style={{ position: "absolute", inset: 0, width: "100%", height: "100%", transform: "rotate(-90deg)" }}

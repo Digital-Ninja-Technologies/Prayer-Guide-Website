@@ -32,7 +32,6 @@
   height: 520px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(232, 179, 107, 0.16), transparent 66%);
-  animation: drift 11s ease-in-out infinite;
   pointer-events: none;
 }
 
@@ -83,7 +82,6 @@
   height: 7px;
   border-radius: 50%;
   background: var(--teal);
-  animation: glowpulse 2.4s ease-in-out infinite;
 }
 
 .badgeLabel {
@@ -296,7 +294,6 @@
   display: flex;
   width: max-content;
   gap: 36px;
-  animation: marquee 34s linear infinite;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 2px;

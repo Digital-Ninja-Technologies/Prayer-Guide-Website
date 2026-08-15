@@ -53,6 +53,7 @@ export function GroupScreen() {
                 borderRadius: "50%",
                 background: T.teal,
                 boxShadow: `0 0 8px ${T.teal}`,
+                animation: "glowpulse 2s ease-in-out infinite",
               }}
             />
             <span style={{ fontSize: 11, fontWeight: 800, letterSpacing: 1, textTransform: "uppercase", color: T.teal }}>

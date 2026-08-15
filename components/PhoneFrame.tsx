@@ -26,9 +26,8 @@ export function PhoneFrame({
         />
       ) : null}
       <div
-        className={`${styles.frame} ${size === "large" ? styles.frameLarge : styles.frameShowcase} ${
-          float ? styles.frameFloat : ""
-        }`}
+        className={`${styles.frame} ${size === "large" ? styles.frameLarge : styles.frameShowcase}`}
+        style={float ? { animation: "floaty 7s ease-in-out infinite" } : undefined}
       >
         {children}
       </div>

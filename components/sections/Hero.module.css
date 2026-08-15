@@ -32,7 +32,6 @@
   height: 7px;
   border-radius: 50%;
   background: var(--teal);
-  animation: glowpulse 2.4s ease-in-out infinite;
 }
 
 .badgeLabel {

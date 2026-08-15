@@ -10,7 +10,10 @@ export function Hero() {
       <div>
         <Reveal>
           <div className={styles.badge}>
-            <span className={styles.badgeDot} />
+            <span
+              className={styles.badgeDot}
+              style={{ animation: "glowpulse 2.4s ease-in-out infinite" }}
+            />
             <span className={styles.badgeLabel}>Free on iOS &amp; Android</span>
           </div>
         </Reveal>

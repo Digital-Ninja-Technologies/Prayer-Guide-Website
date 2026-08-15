@@ -61,6 +61,10 @@ export function RequestsScreen() {
                   textTransform: "uppercase",
                   padding: "5px 11px",
                   borderRadius: 100,
+                  animation:
+                    r.tag === "Answered"
+                      ? "glowpulse 2.2s ease-in-out infinite"
+                      : undefined,
                 }}
               >
                 {r.tag}

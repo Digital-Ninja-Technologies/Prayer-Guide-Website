@@ -14,11 +14,17 @@ export function FreePanel() {
     <section id="free" className={styles.section}>
       <Reveal>
         <div className={styles.panel}>
-          <div className={styles.orb} />
+          <div
+            className={styles.orb}
+            style={{ animation: "drift 11s ease-in-out infinite" }}
+          />
           <div className={styles.grid}>
             <div className={styles.left}>
               <div className={styles.badge}>
-                <span className={styles.badgeDot} />
+                <span
+                  className={styles.badgeDot}
+                  style={{ animation: "glowpulse 2.4s ease-in-out infinite" }}
+                />
                 <span className={styles.badgeLabel}>Free to use</span>
               </div>
               <h2 className={styles.h2}>
@@ -63,7 +69,10 @@ export function FreePanel() {
           </div>
 
           <div className={styles.marqueeOuter}>
-            <div className={styles.marqueeTrack}>
+            <div
+              className={styles.marqueeTrack}
+              style={{ animation: "marquee 34s linear infinite" }}
+            >
               {marquee.map((m, i) => (
                 <span key={`${m}-${i}`} className={styles.marqueeItem}>
                   {m}

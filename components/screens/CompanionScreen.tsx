@@ -1,6 +1,36 @@
 import { StatusBar } from "./StatusBar";
 import { T } from "./tokens";
 
+function TypingDots() {
+  return (
+    <div
+      style={{
+        alignSelf: "flex-start",
+        display: "flex",
+        alignItems: "center",
+        gap: 4,
+        background: T.surface,
+        border: `1px solid ${T.line}`,
+        borderRadius: "18px 18px 18px 6px",
+        padding: "12px 14px",
+      }}
+    >
+      {[0, 1, 2].map((i) => (
+        <span
+          key={i}
+          style={{
+            width: 5,
+            height: 5,
+            borderRadius: "50%",
+            background: T.dim,
+            animation: `typingBounce 1.2s ease-in-out ${i * 0.15}s infinite`,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
+
 function Bubble({ who, children }: { who: "a" | "u"; children: string }) {
   const isAgent = who === "a";
   return (
@@ -47,6 +77,7 @@ export function CompanionScreen() {
             justifyContent: "center",
             color: T.teal,
             fontSize: 18,
+            animation: "glowpulse 2.6s ease-in-out infinite",
           }}
         >
           ✦
@@ -67,6 +98,7 @@ export function CompanionScreen() {
         <Bubble who="a">
           &ldquo;Do not be anxious about anything.&rdquo; — Philippians 4:6. Let&rsquo;s bring her before God, one breath at a time.
         </Bubble>
+        <TypingDots />
       </div>
       <div style={{ padding: "12px 18px 18px" }}>
         <div

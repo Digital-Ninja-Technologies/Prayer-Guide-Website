@@ -13,16 +13,6 @@
   overflow: hidden;
 }
 
-.frameFloat {
-  animation: floaty 7s ease-in-out infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .frameFloat {
-    animation: none;
-  }
-}
-
 .frameLarge {
   width: 260px;
   height: 536px;

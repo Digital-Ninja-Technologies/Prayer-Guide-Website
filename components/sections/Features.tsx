@@ -57,7 +57,13 @@ export function Features() {
               ].join(" ")}
             >
               {cfg.orb && (
-                <div className={styles.orb} style={{ background: `radial-gradient(circle, ${cfg.orb}, transparent 68%)` }} />
+                <div
+                  className={styles.orb}
+                  style={{
+                    background: `radial-gradient(circle, ${cfg.orb}, transparent 68%)`,
+                    animation: "drift 12s ease-in-out infinite",
+                  }}
+                />
               )}
               <div className={styles.cardTop}>
                 <span className={styles.iconTile} style={{ background: cfg.iconBg }}>
