@@ -1,0 +1,122 @@
+.row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+@media (min-width: 420px) {
+  .row {
+    gap: 12px;
+  }
+}
+
+@media (min-width: 560px) {
+  .row {
+    gap: 16px;
+    width: auto;
+  }
+}
+
+.button {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 800;
+  padding: 11px 10px;
+  border-radius: 12px;
+}
+
+@media (min-width: 420px) {
+  .button {
+    gap: 10px;
+    padding: 13px 16px;
+  }
+}
+
+@media (min-width: 560px) {
+  .button {
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 15px 22px;
+    border-radius: 14px;
+    flex: none;
+  }
+}
+
+.apple {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.play {
+  background: var(--surface);
+  border: 1px solid var(--line2);
+  color: var(--text);
+}
+
+.icon {
+  flex: none;
+  width: 16px;
+  height: auto;
+}
+
+@media (min-width: 420px) {
+  .icon {
+    width: 18px;
+  }
+}
+
+@media (min-width: 560px) {
+  .icon {
+    width: 20px;
+  }
+}
+
+.textBlock {
+  text-align: left;
+  line-height: 1.15;
+  min-width: 0;
+}
+
+.subLabel {
+  font-size: 9px;
+  font-weight: 600;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 420px) {
+  .subLabel {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 560px) {
+  .subLabel {
+    font-size: 11px;
+  }
+}
+
+.mainLabel {
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 420px) {
+  .mainLabel {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 560px) {
+  .mainLabel {
+    font-size: 18px;
+  }
+}

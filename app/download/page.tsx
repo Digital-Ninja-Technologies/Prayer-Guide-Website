@@ -70,7 +70,7 @@ export default function DownloadPage() {
               at prayer in under a minute.
             </p>
 
-            <StoreButtons compact />
+            <StoreButtons />
 
             <div className={styles.rating}>
               <div className={styles.stars}>★★★★★</div>
