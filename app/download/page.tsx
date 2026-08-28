@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cloneElement } from "react";
 import { AmbientOrb } from "@/components/AmbientOrb";
 import { StoreButtons, AppleIcon, PlayIcon } from "@/components/StoreButtons";
 import { QrCode } from "@/components/QrCode";
@@ -18,6 +19,7 @@ const stores = [
     url: APP_STORE_URL,
     iconBg: "#ECEAE3",
     icon: <AppleIcon />,
+    comingSoon: true,
   },
   {
     label: "Android · phone & tablet",
@@ -26,6 +28,7 @@ const stores = [
     url: PLAY_STORE_URL,
     iconBg: "#0E1513",
     icon: <PlayIcon />,
+    comingSoon: false,
   },
 ];
 
@@ -80,19 +83,58 @@ export default function DownloadPage() {
 
           <div className={styles.storeCards}>
             {stores.map((s) => (
-              <div key={s.name} className={styles.storeCard}>
-                <div className={styles.qrTile}>
-                  <QrCode data={s.url} />
-                </div>
-                <div className={styles.storeInfo}>
-                  <div className={styles.storeLabelRow}>
-                    <span className={styles.storeIcon} style={{ background: s.iconBg }}>
-                      {s.icon}
-                    </span>
-                    <span className={styles.storeLabel}>{s.label}</span>
+              <div key={s.name} className={styles.storeCardWrap}>
+                {s.comingSoon && (
+                  <span className={styles.comingSoon}>Coming soon</span>
+                )}
+                <div
+                  className={`${styles.storeCard} ${
+                    s.comingSoon ? styles.storeCardDisabled : ""
+                  }`}
+                >
+                  <div
+                    className={`${styles.qrTile} ${
+                      s.comingSoon ? styles.qrTilePlaceholder : ""
+                    }`}
+                  >
+                    {s.comingSoon ? (
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                          gap: 8,
+                          color: "var(--dim)",
+                        }}
+                      >
+                        <span style={{ width: 28, height: 28 }}>
+                          {cloneElement(s.icon, { color: "var(--dim)" } as never)}
+                        </span>
+                        <span
+                          style={{
+                            fontSize: 10,
+                            fontWeight: 800,
+                            letterSpacing: 1,
+                            textTransform: "uppercase",
+                          }}
+                        >
+                          Soon
+                        </span>
+                      </div>
+                    ) : (
+                      <QrCode data={s.url} />
+                    )}
                   </div>
-                  <h3 className={styles.storeName}>{s.name}</h3>
-                  <p className={styles.storeNote}>{s.note}</p>
+                  <div className={styles.storeInfo}>
+                    <div className={styles.storeLabelRow}>
+                      <span className={styles.storeIcon} style={{ background: s.iconBg }}>
+                        {s.icon}
+                      </span>
+                      <span className={styles.storeLabel}>{s.label}</span>
+                    </div>
+                    <h3 className={styles.storeName}>{s.name}</h3>
+                    <p className={styles.storeNote}>{s.note}</p>
+                  </div>
                 </div>
               </div>
             ))}
