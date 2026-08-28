@@ -11,7 +11,7 @@ export type Feature = {
 
 const featureList = [
   {
-    icon: "☀",
+    icon: "☼",
     title: "Daily guided prayer",
     body: "Morning, midday, and evening paths that meet you where the day finds you — never more than a few quiet minutes.",
   },
