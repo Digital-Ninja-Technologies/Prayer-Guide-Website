@@ -29,20 +29,21 @@ export function PlayIcon({ className }: { className?: string }) {
 export function StoreButtons() {
   return (
     <div className={styles.row}>
-      <a
-        href={APP_STORE_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`${styles.button} ${styles.apple}`}
-      >
-        <AppleIcon className={styles.icon} />
-        <div className={styles.textBlock}>
-          <div className={styles.subLabel}>Download on the</div>
-          <div className={styles.mainLabel} style={{ color: "var(--bg)" }}>
-            App Store
+      <div className={styles.appleWrap}>
+        <span className={styles.comingSoon}>Coming soon</span>
+        <div
+          aria-disabled="true"
+          className={`${styles.button} ${styles.apple} ${styles.disabled}`}
+        >
+          <AppleIcon className={styles.icon} />
+          <div className={styles.textBlock}>
+            <div className={styles.subLabel}>Download on the</div>
+            <div className={styles.mainLabel} style={{ color: "var(--bg)" }}>
+              App Store
+            </div>
           </div>
         </div>
-      </a>
+      </div>
       <a
         href={PLAY_STORE_URL}
         target="_blank"
