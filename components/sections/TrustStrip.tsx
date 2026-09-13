@@ -1,6 +1,6 @@
 import { Reveal } from "@/components/Reveal";
 
-const items = ["No ads", "No subscription", "1,000+ at prayer", "4.9 ★ average"];
+const items = ["No subscription", "1,000+ at prayer", "4.9 ★ average"];
 
 export function TrustStrip() {
   return (

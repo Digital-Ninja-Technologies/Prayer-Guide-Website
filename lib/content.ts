@@ -181,11 +181,6 @@ export const freeFacts = [
   },
   {
     num: "02",
-    title: "No ads",
-    body: "Nothing is sold to you and nothing interrupts your prayer time.",
-  },
-  {
-    num: "03",
     title: "Your data stays yours",
     body: "Prayer lists and journals are private, and we never sell what you write.",
   },
@@ -193,7 +188,6 @@ export const freeFacts = [
 
 const marqueeBase = [
   "Free forever",
-  "No ads",
   "No subscription",
   "Every feature unlocked",
   "No trial to expire",
@@ -319,7 +313,7 @@ export const termsSections: LegalSection[] = [
     num: "06",
     title: "Cost",
     paras: [
-      "Prayer Guide is free to use. There is no paid tier, no subscription, no trial that expires, and no feature held back. We don’t show ads and we don’t sell your data.",
+      "Prayer Guide is free to use. There is no paid tier, no subscription, no trial that expires, and no feature held back. We don’t sell your data.",
     ],
   },
   {

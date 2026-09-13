@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       eyebrow="Privacy Policy"
       title="Your prayers stay yours."
       effectiveDate="Effective August 2026"
-      summaryLead="Your journal is end-to-end encrypted — we cannot read it, even if we wanted to. We don't sell your data, we don't show ads, and we don't use your prayers or journal to train any AI model."
+      summaryLead="Your journal is end-to-end encrypted — we cannot read it, even if we wanted to. We don't sell your data and we don't use your prayers or journal to train any AI model."
       summaryBody="This page explains exactly what we collect and why."
       sections={privacySections}
       crossLink={{
