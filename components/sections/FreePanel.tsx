@@ -5,7 +5,6 @@ import styles from "./FreePanel.module.css";
 
 const stats = [
   { num: "$0", label: "Forever", color: "var(--text)" },
-  { num: "0", label: "Ads shown", color: "var(--text)" },
   { num: "100%", label: "Unlocked", color: "var(--amber)" },
 ];
 
